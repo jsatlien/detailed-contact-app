@@ -1,39 +1,29 @@
-<table class="table">
+<table class="table contact-table">
   <thead>
     <tr>
       <th>Name</th>
-      <th>Instrument</th>
-      <th></th>
-      <th></th>
+      <th>Email</th>
+      <th>Phone</th>
+      <th>Location</th>
     </tr>
   </thead>
   <tfoot>
     <tr>
       <th>Name</th>
-      <th>Instrument</th>
-      <th></th>
-      <th></th>
+      <th>Email</th>
+      <th>Phone</th>
+      <th>Location</th>
     </tr>
   </tfoot>
   <tbody>
-    <tr>
-      <td>Misty Abbott</td>
-      <td>Bass Guitar</td>
-      <td class="is-icon">
-        <a href="#">
-          <i class="fa fa-twitter"></i>
-        </a>
-      </td>
-      <td class="is-icon">
-        <a href="#">
-          <i class="fa fa-instagram"></i>
-        </a>
-      </td>
+    <tr ng-repeat="contact in home.contacts">
+      <td class='contact-name'>{{ contact.name }}</td>
+      <td class='contact-email'>{{ contact.email }}</td>
+      <td class="contact-phone">{{ contact.phone }}</td>
+      <td class="contact-location"> {{ contact.location }}</td>
     </tr>
     <tr>
-      <td>John Smith</td>
-      <td>Rhythm Guitar</td>
-      <td class="is-icon">
-        <a href="#">
-          <i class="fa fa-twitter"></i>
-        </a>
+      <td>EXAMPLE John Smith</td>
+      <td>EXAMPLE Rhythm Guitar</td>
+      <td class="contact-phone">EXAMPLE-355-4045</td>
+      <td class="contact-location">EXAMPLE Atlanta, GA</td>
