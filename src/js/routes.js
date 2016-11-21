@@ -5,16 +5,28 @@ function routerConfig ($stateProvider, $urlRouterProvider){
 			templateUrl: 'templates/layout.tpl.html',
 			controller: 'LayoutController as layout'
 
-
     })
 
     .state('root.home', {
 			url: '/',
 			templateUrl: 'templates/home.tpl.html',
-			controller: 'HomeController as home',
+			controller: 'HomeController as home'
 
 		})
 
+    .state('root.add', {
+      url: '/add',
+      templateUrl: 'templates/add.tpl.html',
+      controller: 'AddController as add'
+
+    })
+
+    .state('root.single', {
+      url: '/contact/:id',
+      templateUrl: 'templates/single.tpl.html',
+      controller: 'SingleController as single'
+
+    })
 
 
 	$urlRouterProvider.otherwise('/');
