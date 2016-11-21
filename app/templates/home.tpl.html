@@ -17,13 +17,15 @@
   </tfoot>
   <tbody>
     <tr ng-repeat="contact in home.contacts">
-      <td class='contact-name'>{{ contact.name }}</td>
-      <td class='contact-email'>{{ contact.email }}</td>
-      <td class="contact-phone">{{ contact.phone }}</td>
-      <td class="contact-location">{{ contact.location }}</td>
+      <a href="#/contact/{{ contact.id }}">
+        <td class='contact-name'>{{ contact.name }}</td>
+        <td class='contact-email'>{{ contact.email }}</td>
+        <td class="contact-phone">{{ contact.phone }}</td>
+        <td class="contact-location">{{ contact.location }}</td>
+      </a>
     </tr>
     <tr>
       <td>EXAMPLE John Smith</td>
-      <td>EXAMPLE Rhythm Guitar</td>
+      <td>EXAMPLE jsguitar@rockstar.com</td>
       <td class="contact-phone">EXAMPLE-355-4045</td>
       <td class="contact-location">EXAMPLE Atlanta, GA</td>
