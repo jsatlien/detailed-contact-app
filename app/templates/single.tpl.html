@@ -1,0 +1,29 @@
+<div class="modal is-active">
+  <div class="modal-background" ng-click="single.removeModal()"></div>
+  <div class="modal-content">
+    <div class="card contact-card">
+      <div class="card-content">
+        <button class='button is-button back-button' type="button" ng-click='single.removeModal()' name="back-button"> < Back to Contacts</button>
+        <div class="media">
+          <div class="media-left">
+            <figure class="image is-32x32">
+              <img src="http://www.freeiconspng.com/uploads/contact-icon-20.png" alt="Image">
+            </figure>
+          </div>
+          <div class="media-content">
+            <p class="title is-5">{{ single.contact.name }}</p>
+            <p class="subtitle is-6">{{ single.contact.email }}</p>
+          </div>
+        </div>
+
+        <div class="content">
+          <ul class='single-contact-info'>
+            <li>Phone: {{ single.contact.phone }}</li>
+            <li>Location: {{ single.contact.location }}</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+  <button class="modal-close" ng-click="single.removeModal()"></button>
+</div>

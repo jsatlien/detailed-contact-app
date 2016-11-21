@@ -16,6 +16,12 @@ function ContactService ($http) {
     return $http.get(url);
   };
 
+  this.removeContact = function (id) {
+    let url = SERVER + id;
+    return $http.delete(url);
+  };
+
+
 };
 
 ContactService.$inject = ['$http'];

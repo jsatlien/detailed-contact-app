@@ -33,3 +33,20 @@
 .logo-link {
   // text-decoration: none;
 }
+
+.contact-card {
+  width: 700px;
+  position: relative;
+
+
+  .back-button {
+    position: absolute;
+    top: 8px;
+    right: 8px;
+  }
+  .single-contact-info {
+    list-style: none;
+    margin-left: 40px;
+
+  }
+}

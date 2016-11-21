@@ -3,21 +3,26 @@
 
   <form name="new-contact" ng-submit="add.addContact(contact)">
     <p class="control">
-      <input class="contact-input" name="name" type="text" placeholder="Full Name..."
+      <h3>Full Name</h3>
+      <input class="contact-input" name="name" type="text" placeholder="John Smith..."
              required ng-model="contact.name" />
     </p>
     <p class="control">
-      <input class="contact-input" name="email" type="text" placeholder="Email..."
+      <h3>Email</h3>
+      <input class="contact-input" name="email" type="text" placeholder="username@website.com..."
              required ng-model="contact.email" />
     </p>
     <p class="control">
-      <input class="contact-input" name="phone" type="text" placeholder="Phone Number..."
+      <h3>Phone</h3>
+      <input class="contact-input" name="phone" type="tel" placeholder="xxx-xxx-xxxx..."
              required ng-model="contact.phone" />
     </p>
     <p class="control">
-      <input class="contact-input" name="location" type="text" placeholder="Location..."
+      <h3>Location</h3>
+      <input class="contact-input" name="location" type="text" placeholder="City, State..."
              required ng-model="contact.location" />
     </p>
+    <br>
     <button class="button is-primary">Add Contact</button>
   </form>
 </div>
