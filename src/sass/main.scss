@@ -18,9 +18,18 @@
 .contact-form {
   width: 400px;
   margin: 20px auto;
+
+  h1.title {
+    text-align: center;
+  }
 }
 
 .contact-input {
   height: 30px;
-  width: 300px;
+  width: 100%;
+  padding: 8px;
+}
+
+.logo-link {
+  // text-decoration: none;
 }
