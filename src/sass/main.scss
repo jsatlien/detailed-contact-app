@@ -50,3 +50,13 @@
 
   }
 }
+
+.single-contact-container {
+  position: relative;
+  .delete-contact {
+      position: absolute;
+      bottom: -25px;
+      right: -10px;
+  }
+
+}

@@ -16,11 +16,23 @@
           </div>
         </div>
 
-        <div class="content">
+        <div class="content single-contact-container">
           <ul class='single-contact-info'>
             <li>Phone: {{ single.contact.phone }}</li>
             <li>Location: {{ single.contact.location }}</li>
           </ul>
+          <!-- <a class="button is-success edit-contact">
+            <span class="icon">
+              <i class="fa fa-check"></i>
+            </span>
+            <span>Edit</span>
+          </a> -->
+          <a class="button is-danger delete-contact" ng-click="removeContact(single.contact)">
+            <span>Remove Contact</span>
+            <span class="icon">
+              <i class="fa fa-times"></i>
+            </span>
+          </a>
         </div>
       </div>
     </div>
