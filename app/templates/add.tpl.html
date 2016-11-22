@@ -4,7 +4,7 @@
   <form name="new-contact" ng-submit="add.addContact(contact)">
     <p class="control">
       <h3>Full Name</h3>
-      <input class="contact-input" name="name" type="text" placeholder="John Smith..."
+      <input class="contact-input" name="name" type="text" placeholder="First Last..."
              required ng-model="contact.name" />
     </p>
     <p class="control">
@@ -13,8 +13,8 @@
              required ng-model="contact.email" />
     </p>
     <p class="control">
-      <h3>Phone</h3>
-      <input class="contact-input" name="phone" type="tel" placeholder="xxx-xxx-xxxx..."
+      <h3>Phone (format: xxx-xxx-xxxx )</h3>
+      <input class="contact-input phone-input" name="phone" type="tel" pattern="^\d{3}-\d{3}-\d{4}$" placeholder="123-456-7890..."
              required ng-model="contact.phone" />
     </p>
     <p class="control">

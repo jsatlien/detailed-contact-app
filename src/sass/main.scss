@@ -50,3 +50,19 @@
 
   }
 }
+
+.phone-input[type="tel"] {
+  border: 1px solid #ddd;
+  padding: 4px 8px;
+}
+.phone-input[type="tel"]:focus {
+  border: 1px solid #000;
+}
+
+.phone-input[type="submit"] {
+  font-weight: bold;
+  padding: 4px 8px;
+  border:1px solid #000;
+  background: #3b5998;
+  color:#fff;
+}
