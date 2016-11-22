@@ -14,6 +14,12 @@ function routerConfig ($stateProvider, $urlRouterProvider){
 
 		})
 
+		.state('root.fullview', {
+			url: '/full',
+			templateUrl: 'templates/fullview.tpl.html',
+			controller: 'FullController as full'
+		})
+
     .state('root.add', {
       url: '/add',
       templateUrl: 'templates/add.tpl.html',

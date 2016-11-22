@@ -1,0 +1,26 @@
+<table class="table contact-table">
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Email</th>
+      <th>Phone</th>
+      <th>Location</th>
+    </tr>
+  </thead>
+  <tfoot>
+    <tr>
+      <th>Name</th>
+      <th>Email</th>
+      <th>Phone</th>
+      <th>Location</th>
+    </tr>
+  </tfoot>
+  <tbody>
+    <tr ng-repeat="contact in home.contacts">
+        <td class='contact-name'>
+          <a href="#/contact/{{ contact._id }}">{{ contact.name }}</a>
+        </td>
+        <td class='contact-email'>{{ contact.email }}</td>
+        <td class="contact-phone">{{ contact.phone }}</td>
+        <td class="contact-location">{{ contact.location }}</td>
+    </tr>
