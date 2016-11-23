@@ -3,8 +3,8 @@ function SingleController ($state, $stateParams, ContactService) {
   let vm = this;
   vm.contact = {};
 
-  this.removeModal = removeModal;
-
+  vm.removeModal = removeModal;
+  vm.deleteContact = deleteContact;
   function init () {
     ContactService.getContact($stateParams.id).then((response) => {
       vm.contact = response.data;
@@ -17,6 +17,14 @@ function SingleController ($state, $stateParams, ContactService) {
 
   function removeModal () {
     $state.go('root.home')
+  }
+
+  function deleteContact (contact) {
+    console.log("I got clicked")
+    ContactService.removeContact($stateParams.id).then((response) => {
+       console.log('Contact Removed')
+       $state.go('root.home');
+      });
   }
 
 };

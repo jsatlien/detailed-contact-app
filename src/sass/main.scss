@@ -37,6 +37,12 @@
 .contact-card {
   width: 700px;
   position: relative;
+  .remove-contact-button {
+    position: absolute;
+    bottom: 8px;
+    right: 8px;
+  }
+
 
 
   .back-button {
